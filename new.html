@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>single page </title>
+
+		<style type="text/css">
+		*{margin: 0;padding: 0}
+		nav{
+			width: 100%;
+			height: 80px;
+			background-color: blue;
+		}
+		nav ul{
+			width: 50%;
+			display: inline-flex;
+			list-style-type: none;
+			text-transform: capitalize;
+		}
+		nav ul li{
+			width: 150px;
+			height: 100%;
+			line-height: 80px;
+			text-align: center;
+			font-size: 14pt;
+			border: 1px solid red;
+			color: #ffffff;
+			text-decoration: none;
+
+		}
+		nav ul li:hover{
+			background-color: powderblue;
+		}
+		nav ul ul{
+			display: none;
+			
+		}
+		nav ul li:hover > ul{
+			display: block;
+			position: absolute;
+			background-color: blue;
+			width: 150px;
+
+		}
+		nav ul ul li:hover{
+			background-color: red;
+
+		}
+		nav ul ul ul{
+			left: 100%;
+			margin-top: -80px;
+		}
+
+		section{
+			width: 100%;
+			height: 450px;
+			border: 1px solid #000000;
+		}
+		section h1{
+			color: blue;
+			text-transform: capitalize;
+			text-align: center;
+			/*margin-top: 50px;*/
+		}
+		#Home{
+			background-color: yellow;
+
+		}
+		#About{
+			background-color: green;
+		}
+		#Home .main{
+			display: flex;
+			justify-content: space-between;
+			margin: auto;
+		}
+		#Home .home-div {
+			width: 300px ;
+			height: auto;
+			border: 1px solid red;
+		}
+		#Home .home-div img{
+			width: 200px;
+			height: auto;
+			border-radius: 50%;
+		}
+		.btn{
+			width: 100px;
+			height: 30px;
+			color: #fff;
+			background-color: blue;
+			border: 0;
+			border-radius: 25px
+		}
+
+		
+	</style>
+</head>
+<body>
+	<!-- ===========nav bar start========= -->
+	<nav>
+		<ul>
+			<a href="#Home"><li>home </li></a>
+			<a href="#About"><li>about us </li></a>
+			<a href="#Contact"><li>contact</li></a> 
+			<a href="#Help"><li>help</li></a>
+			<a href="#Register"><li>register</li></a>
+		</ul>
+	</nav>
+<!-- ============= nav bar end======== -->
+
+<section id="Home">
+	<h1> home section</h1>
+	<div class="main">
+	<div class="home-div" >
+		<h1>title</h1>
+		<img src="images/car1.jpeg">
+		<!-- 
+		<img src="../../images/car1.jpeg">
+		<img src="images/folder2/car2.jpeg"> -->
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<button class="btn">click</button>
+
+	</div>
+	<div class="home-div" >
+			<h1>title</h1>
+			<img src="images/car1.jpeg">
+			<!-- 
+			<img src="../../images/car1.jpeg">
+			<img src="images/folder2/car2.jpeg"> -->
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<button class="btn">click</button>
+
+		</div>
+<div class="home-div" >
+			<h1>title</h1>
+			<img src="images/car1.jpeg">
+			<!-- 
+			<img src="../../images/car1.jpeg">
+			<img src="images/folder2/car2.jpeg"> -->
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<button class="btn">click</button>
+
+		</div>
+
+	</div>
+
+</section>
+
+
+<section id="About">
+	<h1> about us section</h1>
+
+</section>
+
+
+<section id="Contact">
+	<h1> constact section</h1>
+
+</section>
+
+
+<section id="Help">
+	<h1> help section</h1>
+
+</section>
+
+
+<section id="Register">
+	<h1> registration section</h1>
+
+</section>
+
+</body>
+</html>
